@@ -1,0 +1,19 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 1rem;
+    justify-content: center;
+}
+.element{
+    border: 2px solid black;
+    width: 5vw;
+    margin: 2px;
+}
+.cell{
+    width: 5vw;
+}
+.atomic_weight{
+    float: right;
+    margin: 1px;
+}

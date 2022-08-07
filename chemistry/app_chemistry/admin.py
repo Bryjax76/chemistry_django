@@ -5,6 +5,7 @@ from .models import *
 @admin.register(Elements)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'name',
         'symbol',
         'atomic_number',
@@ -14,7 +15,8 @@ class CategoryAdmin(admin.ModelAdmin):
         'state',
         'melting_temp',
         'boiling_temp',
-        'atomic_radius'
+        'atomic_radius',
+        'group'
         )
 
 admin.site.register(Value)

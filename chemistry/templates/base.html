@@ -1,0 +1,46 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tablica</title>
+
+    {% block seo %}
+    {% endblock %}
+
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    {% block css %}
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container py-3">
+      <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-4">Tablia okresowa pierwiastków</span>
+          </a>
+
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">###</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">###</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="/categories">###</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+      <main>
+        {% block content %}
+        {% endblock %}
+      </main>
+    </div>
+
+    {% block js %}
+    {% endblock %}
+  </body>
+</html>

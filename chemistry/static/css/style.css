@@ -1,29 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
-    background-color: bisque;
+    background-color: gray;
 }
 .content{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    padding: 1rem;
     justify-content: center;
 }
 #lantanowceDiv{
     display: none;
     flex-direction: row;
     justify-content: center;
-    
+    animation-name: slit-in-horizontal;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
 }
 #aktynowceDiv{
     display: none;
     flex-direction: row;
     justify-content: center;
+    animation-name: slit-in-horizontal;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
 }
+@keyframes slit-in-horizontal {
+    0%{
+      transform: translateZ(-800px) rotateX(90deg);
+      opacity: 0;
+    }
+    50%{
+      transform: translateZ(-160px) rotateX(87deg);
+      opacity: 1;
+    }
+    100%{
+      transform: translateZ(0) rotateX(0);
+    }
+  }
 .lantanowceDiv{
     display: flex;
 }
 .elementLant{
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: orange;
     width: 5vw;
     margin: 2px;
@@ -31,7 +61,7 @@ body{
     justify-content: center;
 }
 .elementAkt{
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: rgb(60, 60, 255);
     width: 5vw;
     margin: 2px;
@@ -40,9 +70,9 @@ body{
 }
 .element{
     display: flex;
-    border: 2px solid black;
+    border: 1px solid black;
     width: 5vw;
-    margin: 2px;
+    margin: 1px;
     background-color: azure;
     justify-content: center;
 }
@@ -57,4 +87,68 @@ button{
     border: 0px;
     width: 90%;
     height: 90%;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+button:hover{
+    border: 0px;
+    width: 90%;
+    height: 90%;
+    background-color: gray;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
+canvas{
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+}
+.canvas{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    flex-direction: column;
+}
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.tools .color-field{
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+}
+.tools .button{
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background: #222;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.color-picker{
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+}
+.pen-range{
+    align-self: center;
+    margin: 0 10px;
 }

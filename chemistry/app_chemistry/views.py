@@ -1,8 +1,11 @@
-from xml.dom.minidom import Element
 from django.shortcuts import render
-from app_chemistry.models import Elements, Value
+from app_chemistry.models import Elements
 
 # Create your views here.
+
+def canvas(request):
+    return render(request, 'canvas.html')
+
 def homepage(request):
     elements = Elements.objects.all()
     group1 = Elements.objects.filter(group=1)

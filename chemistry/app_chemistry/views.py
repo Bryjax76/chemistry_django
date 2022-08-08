@@ -1,9 +1,10 @@
+from xml.dom.minidom import Element
 from django.shortcuts import render
-from app_chemistry.models import Elements
-from django.db.models import Q
+from app_chemistry.models import Elements, Value
 
 # Create your views here.
 def homepage(request):
+    elements = Elements.objects.all()
     group1 = Elements.objects.filter(group=1)
     group2 = Elements.objects.filter(group=2)
     group3 = Elements.objects.filter(group=3)
@@ -22,6 +23,8 @@ def homepage(request):
     group17 = Elements.objects.filter(group=17)
     group18 = Elements.objects.filter(group=18)
     group19 = Elements.objects.filter(group=19)
+    lanthanides = Elements.objects.filter(is_lanthanides=True)
+    actinides = Elements.objects.filter(is_actinides=True)
 
     return render(request, 'home.html', {
         'group1': group1,
@@ -41,5 +44,8 @@ def homepage(request):
         'group16': group16,
         'group17': group17,
         'group18': group18,
-        'group19': group19
+        'group19': group19,
+        'lanthanides': lanthanides,
+        'actinides': actinides,
+        'elements': elements,
     })

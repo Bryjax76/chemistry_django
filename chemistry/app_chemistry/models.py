@@ -118,10 +118,10 @@ class Elements(models.Model):
         verbose_name='Stan skupienia',
         on_delete = models.CASCADE
     )
-    value = models.ManyToManyField(
-        Value,
-        verbose_name='Wartościowość',
-        blank=True
+    value = models.CharField(
+        max_length=32,
+        null=False,
+        blank=True,
     )
     electro_negativity = models.FloatField(
         verbose_name='Elektroujemność',

@@ -4,192 +4,352 @@
     <div class="elements">
         {% for elem in group1 %}
         <div class="element">
-            <small>{{elem.period}}</small>
-            <small class="atomic_weight">{{elem.atomic_weight}}</small>
-            <center><h1>{{elem.symbol}}</h1></center>
-            <center><small>{{elem.name}}</small></center>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+                <small>{{elem.atomic_number}}</small>
+                <small class="atomic_weight">{{elem.atomic_weight}}</small>
+                <center><h1>{{elem.symbol}}</h1></center>
+                <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group3 %}
         <div class="element">
-            <small>{{elem.period}}</small>
-            <small class="atomic_weight">{{elem.atomic_weight}}</small>
-            <center><h1>{{elem.symbol}}</h1></center>
-            <center><small>{{elem.name}}</small></center>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+                <small>{{elem.atomic_number}}</small>
+                <small class="atomic_weight">{{elem.atomic_weight}}</small>
+                <center><h1>{{elem.symbol}}</h1></center>
+                <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group10 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
-        <div class="element">
-            <small>*</small>
-            <center><h1>X</h1></center>
-            <center><small>Lantanowce</small></center>
+        <div class="element" id="lantanowce" style='background-color: orange;'>
+            <button onclick="lantanowce()" style='background-color: orange;'>
+                <small>*</small>
+                <center><h1>X</h1></center>
+                <center><small>Lantanowce</small></center>
+            </button>
         </div>
-        <div class="element">
-            <small>**</small>
-            <center><h1>X</h1></center>
-            <center><small>Aktynowce</small></center>
-        </div>
+        <div class="element" id="aktynowce" style='background-color: rgb(60, 60, 255);'>
+            <button onclick="aktynowce()" style='background-color: rgb(60, 60, 255);'>
+                <small>**</small>
+                <center><h1>X</h1></center>
+                <center><small>Aktynowce</small></center>
+            </button>
+        </div> 
     </div>
     <div class="elements">
         {% for elem in group11 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group12 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group13 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group14 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group15 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group16 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group17 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group18 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group19 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group4 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group5 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group6 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group7 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group8 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
     <div class="elements">
         {% for elem in group2 %}
         <div class="element">
-            <small>{{elem.period}}</small>
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}">
+            <small>{{elem.atomic_number}}</small>
             <small class="atomic_weight">{{elem.atomic_weight}}</small>
             <center><h1>{{elem.symbol}}</h1></center>
             <center><small>{{elem.name}}</small></center>
+            </button>
         </div>
         {% endfor %}
     </div>
 </div>
+
+
+<div id="lantanowceDiv">
+    {% for elem in lanthanides %}
+    <div class="elementLant">
+        <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}" style="background-color: orange;">
+        <small>{{elem.atomic_number}}</small>
+        <small class="atomic_weight">{{elem.atomic_weight}}</small>
+        <center><h1>{{elem.symbol}}</h1></center>
+        <center><small>{{elem.name}}</small></center>
+        </button>
+    </div>
+    {% endfor %}
+</div>
+<div id="aktynowceDiv">
+    {% for elem in actinides %}
+    <div class="elementAkt">
+        <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}" style="background-color: rgb(60, 60, 255);">
+        <small>{{elem.atomic_number}}</small>
+        <small class="atomic_weight">{{elem.atomic_weight}}</small>
+        <center><h1>{{elem.symbol}}</h1></center>
+        <center><small>{{elem.name}}</small></center>
+        </button>
+    </div>
+    {% endfor %}
+</div>
+{% for elem in elements %}
+<div class="modal fade" id="exampleModal{{elem.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    
+      <div class="modal-content">
+        <div class="modal-header center">
+          <h2 class="modal-title" id="exampleModalLabel">{{ elem.name }}</h2>
+        </div>
+        <div class="elementAkt">
+            <button type="button" data-toggle="modal" data-target="#exampleModal{{elem.id}}" style="background-color: rgb(60, 60, 255);">
+            <small>{{elem.atomic_number}}</small>
+            <small class="atomic_weight">{{elem.atomic_weight}}</small>
+            <center><h1>{{elem.symbol}}</h1></center>
+            <center><small>{{elem.name}}</small></center>
+            </button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li><b>Liczba atomowa -</b> {{elem.atomic_number}}</li>
+                {% if elem.atomic_weight is not None %}
+                    <li><b>Masa atomowa -</b> {{elem.atomic_weight}} u</li>
+                {% else %}
+                    <li><b>Masa atomowa -</b> {{elem.atomic_weight}} u</li>
+                {% endif %}
+                <li><b>Okres -</b> {{elem.period}}</li>
+                <li><b>Grupa -</b> {{elem.group}}</li>
+                <li><b>Blok -</b> {{elem.block}}</li>
+                {% if elem.character is not None %}
+                    <li><b>Charakter chemiczny -</b> {{elem.character}}</li>
+                {% else %}
+                    <li><b>Charakter chemiczny -</b> Nieznany</li>
+                {% endif %}
+                {% if elem.state is not None %}
+                    <li><b>Stan skupienia -</b> {{elem.state}}</li>
+                {% else %}
+                    <li><b>Stan skupienia -</b> Nieznany</li>
+                {% endif %}
+                {% if elem.value is not None %}
+                    <li><b>Wartościowość -</b> {{elem.value}}</li>
+                {% else %}
+                    <li><b>Wartościowość -</b> Nieznana</li>
+                {% endif %}
+                {% if elem.electro_negativity is not None %}
+                    <li><b>Elektroujemność -</b> {{elem.electro_negativity}}</li>
+                {% else %}
+                    <li><b>Elektroujemność -</b> Nieznana</li>
+                {% endif %}
+                {% if elem.atomic_radius is not None %}
+                    <li><b>Promień atomu -</b> {{elem.atomic_radius}} pm</li>
+                {% else %}
+                    <li><b>Promień atomu -</b> Nieznany</li>
+                {% endif %}
+                {% if elem.year is not None %}
+                    <li><b>Rok odkrycia -</b> {{elem.year}} r.</li>
+                {% else %}
+                    <li><b>Rok odkrycia -</b> Nieznany </li>
+                {% endif %}
+                {% if elem.melting_temp is not None %}
+                    <li><b>Temp. topnienia -</b> {{elem.melting_temp}} C</li>
+                {% else %}
+                    <li><b>Temp. topnienia -</b> Nieznana</li>
+                {% endif %}
+                {% if elem.boiling_temp is not None %}
+                    <li><b>Temp. wrzenia -</b> {{elem.boiling_temp}} C</li>
+                {% else %}
+                    <li><b>Temp. wrzenia -</b> Nieznana</li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+</div>
+{%endfor%}
+<script>
+    function lantanowce() {
+        var x = document.getElementById("lantanowceDiv");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    function aktynowce() {
+        var x = document.getElementById("aktynowceDiv");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+</script>
 {% endblock %}
